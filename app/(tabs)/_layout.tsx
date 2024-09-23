@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+       <Tabs.Screen
+        name="widget"
+        options={{
+          title: 'Webview',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'chatbubble-ellipses' : 'chatbubble-ellipses-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
